@@ -20,7 +20,7 @@ async def async_setup_entry(
     config_entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    async_add_entities([ElectricityPriceSensor(),ElectricityCompensationSensor], True)
+    async_add_entities([ElectricityPriceSensor(),ElectricityCompensationSensor()], True)
 
 SCAN_INTERVAL = timedelta(minutes=1)
 
